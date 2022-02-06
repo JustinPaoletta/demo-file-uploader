@@ -1,0 +1,36 @@
+#file-upload-component {
+    .uploaded-file-container {
+        height: 400px;
+        width: 400px;
+        overflow: hidden;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .file-input {
+        display: none;
+    }
+    
+    .file-upload {
+        height: 56px;
+        width: 400px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    
+        .content {
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            h5 {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }  
+}

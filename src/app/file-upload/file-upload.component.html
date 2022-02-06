@@ -1,0 +1,20 @@
+<div id="file-upload-component">
+
+  <div class="uploaded-file-container">
+    <img #displayUpload />
+  </div>
+
+  <input type="file" class="file-input" (change)="onFileSelected($event)" #fileUpload />
+
+  <div class="file-upload">
+    <div class="content">
+      <h5>{{fileName || "No file uploaded yet."}}</h5>
+    </div>
+    <div class="content">
+      <button mat-flat-button color="accent" (click)="fileUpload.click()">
+        <mat-icon>upload</mat-icon>
+      </button>
+    </div>
+  </div>
+
+</div>
